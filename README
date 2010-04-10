@@ -1,0 +1,27 @@
++--------------------------------------------+
+| A curl based downloader with GTK interface |
++--------------------------------------------+
+
+Depedencies : gtk+-2.0 gthread-2.0 libcurl
+
+TODOs:
+	- Add option resumefrom
+	- Add option to automatically ask for http credentials 
+		(-> see how to catch crd errors)
+	- Add option http auth method (--http-method -m)
+	- Add option proxy auth method (--proxy-method -M)
+	- Use LINE_MAX for strlen max
+	- EINTR (see grep.c (open()) for blocked by signal
+	- Cookies jar
+	- Disable cookies ?
+	- FIXME: set_default_size don't work
+	- Update window title with progression
+	- File dialog (save as...)
+	- Check race condition
+	-----------------------------------------------------
+	NEXT:
+	- Add ETA
+	- Speed and ETA, find better syst (now avg based speed)
+	- Look if any other instance already exists ; 
+	    	load in that instance instead
+	- Put downloads in the same windows
